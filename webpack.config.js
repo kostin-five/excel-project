@@ -25,7 +25,7 @@ module.exports = (env, argv) => {
       new CopyPlugin({
         patterns: [
           {
-            from: path.resolve(__dirname, "src", "favicon.ico"),
+            from: path.resolve(__dirname, "src", "favicon.png"),
             to: path.resolve(__dirname, "dist"),
           },
         ],
@@ -60,7 +60,7 @@ module.exports = (env, argv) => {
       },
     },
     devServer: {
-      port: "8080",
+      port: "3000",
       open: true,
       hot: true,
     },
