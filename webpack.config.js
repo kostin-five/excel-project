@@ -63,6 +63,12 @@ module.exports = (env, argv) => {
       port: "3000",
       open: true,
       hot: true,
+      client: {
+        overlay: {
+          errors: true,
+          warnings: false,
+        },
+      },
     },
     devtool: isDev ? "source-map" : false,
     plugins: plugins(),
