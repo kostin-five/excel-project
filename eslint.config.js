@@ -28,5 +28,12 @@ module.exports = [
       // Можно добавлять свои правила, например:
       // "no-console": "warn",
     },
+    env: {
+      es6: true,
+      browser: true,
+      node: true,
+      jest: true,
+    },
+    plugins: ["jest"],
   },
 ];
