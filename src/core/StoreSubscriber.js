@@ -18,11 +18,15 @@ export class StoreSubscriber {
               const changes = { [key]: state[key] };
               component.storeChanged(changes);
             }
-          })
+          });
         }
       });
 
       this.prevState = this.store.getState();
+
+      if (process.env.NODE_ENV === "development") {
+        window["redux"] = this.prevState;
+      }
     });
   }
 

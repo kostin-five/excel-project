@@ -16,8 +16,6 @@ class Dom {
 
   text(text) {
     if (typeof text !== "undefined") {
-      // eslint-disable-next-line no-debugger
-      debugger;
       if (text !== this.$el.textContent) {
         this.$el.textContent = text;
       }
